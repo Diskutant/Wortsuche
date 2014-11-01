@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B43A68F6199BA71300009368 /* CAWortSucheController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A68F5199BA71300009368 /* CAWortSucheController.m */; };
+		B43A68F9199BAC1C00009368 /* CAXHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A68F8199BAC1C00009368 /* CAXHTMLParser.m */; };
+		B43A68FE199BAE0F00009368 /* SYXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A68FA199BAE0F00009368 /* SYXmlParser.m */; };
+		B4F46518199BA17000598B7F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F46517199BA17000598B7F /* Cocoa.framework */; };
+		B4F46522199BA17000598B7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4F46520199BA17000598B7F /* InfoPlist.strings */; };
+		B4F46524199BA17000598B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F46523199BA17000598B7F /* main.m */; };
+		B4F46528199BA17000598B7F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B4F46526199BA17000598B7F /* Credits.rtf */; };
+		B4F4652B199BA17000598B7F /* CAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4652A199BA17000598B7F /* CAAppDelegate.m */; };
+		B4F4652E199BA17000598B7F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F4652C199BA17000598B7F /* MainMenu.xib */; };
+		B4F46530199BA17000598B7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F4652F199BA17000598B7F /* Images.xcassets */; };
+		B4F46537199BA17000598B7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F46536199BA17000598B7F /* XCTest.framework */; };
+		B4F46538199BA17000598B7F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F46517199BA17000598B7F /* Cocoa.framework */; };
+		B4F46540199BA17000598B7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4F4653E199BA17000598B7F /* InfoPlist.strings */; };
+		B4F46542199BA17000598B7F /* WortsucheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F46541199BA17000598B7F /* WortsucheTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4F46539199BA17000598B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F4650C199BA17000598B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4F46513199BA17000598B7F;
+			remoteInfo = Wortsuche;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B43A68F4199BA71300009368 /* CAWortSucheController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAWortSucheController.h; sourceTree = "<group>"; };
+		B43A68F5199BA71300009368 /* CAWortSucheController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAWortSucheController.m; sourceTree = "<group>"; };
+		B43A68F7199BAC1C00009368 /* CAXHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXHTMLParser.h; sourceTree = "<group>"; };
+		B43A68F8199BAC1C00009368 /* CAXHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAXHTMLParser.m; sourceTree = "<group>"; };
+		B43A68FA199BAE0F00009368 /* SYXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYXmlParser.m; sourceTree = "<group>"; };
+		B43A68FD199BAE0F00009368 /* SYXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYXmlParser.h; sourceTree = "<group>"; };
+		B4F46514199BA17000598B7F /* Wortsuche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wortsuche.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F46517199BA17000598B7F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B4F4651A199BA17000598B7F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B4F4651B199BA17000598B7F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B4F4651C199BA17000598B7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4F4651F199BA17000598B7F /* Wortsuche-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wortsuche-Info.plist"; sourceTree = "<group>"; };
+		B4F46521199BA17000598B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4F46523199BA17000598B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4F46525199BA17000598B7F /* Wortsuche-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wortsuche-Prefix.pch"; sourceTree = "<group>"; };
+		B4F46527199BA17000598B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B4F46529199BA17000598B7F /* CAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAppDelegate.h; sourceTree = "<group>"; };
+		B4F4652A199BA17000598B7F /* CAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAppDelegate.m; sourceTree = "<group>"; };
+		B4F4652D199BA17000598B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B4F4652F199BA17000598B7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4F46535199BA17000598B7F /* WortsucheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WortsucheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F46536199BA17000598B7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B4F4653D199BA17000598B7F /* WortsucheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WortsucheTests-Info.plist"; sourceTree = "<group>"; };
+		B4F4653F199BA17000598B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4F46541199BA17000598B7F /* WortsucheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WortsucheTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4F46511199BA17000598B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F46518199BA17000598B7F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F46532199BA17000598B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F46538199BA17000598B7F /* Cocoa.framework in Frameworks */,
+				B4F46537199BA17000598B7F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4F4650B199BA17000598B7F = {
+			isa = PBXGroup;
+			children = (
+				B4F4651D199BA17000598B7F /* Wortsuche */,
+				B4F4653B199BA17000598B7F /* WortsucheTests */,
+				B4F46516199BA17000598B7F /* Frameworks */,
+				B4F46515199BA17000598B7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4F46515199BA17000598B7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4F46514199BA17000598B7F /* Wortsuche.app */,
+				B4F46535199BA17000598B7F /* WortsucheTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4F46516199BA17000598B7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4F46517199BA17000598B7F /* Cocoa.framework */,
+				B4F46536199BA17000598B7F /* XCTest.framework */,
+				B4F46519199BA17000598B7F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4F46519199BA17000598B7F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4F4651A199BA17000598B7F /* AppKit.framework */,
+				B4F4651B199BA17000598B7F /* CoreData.framework */,
+				B4F4651C199BA17000598B7F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B4F4651D199BA17000598B7F /* Wortsuche */ = {
+			isa = PBXGroup;
+			children = (
+				B43A68FA199BAE0F00009368 /* SYXmlParser.m */,
+				B43A68FD199BAE0F00009368 /* SYXmlParser.h */,
+				B43A68F4199BA71300009368 /* CAWortSucheController.h */,
+				B43A68F5199BA71300009368 /* CAWortSucheController.m */,
+				B4F46529199BA17000598B7F /* CAAppDelegate.h */,
+				B4F4652A199BA17000598B7F /* CAAppDelegate.m */,
+				B4F4652C199BA17000598B7F /* MainMenu.xib */,
+				B4F4652F199BA17000598B7F /* Images.xcassets */,
+				B4F4651E199BA17000598B7F /* Supporting Files */,
+				B43A68F7199BAC1C00009368 /* CAXHTMLParser.h */,
+				B43A68F8199BAC1C00009368 /* CAXHTMLParser.m */,
+			);
+			path = Wortsuche;
+			sourceTree = "<group>";
+		};
+		B4F4651E199BA17000598B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4F4651F199BA17000598B7F /* Wortsuche-Info.plist */,
+				B4F46520199BA17000598B7F /* InfoPlist.strings */,
+				B4F46523199BA17000598B7F /* main.m */,
+				B4F46525199BA17000598B7F /* Wortsuche-Prefix.pch */,
+				B4F46526199BA17000598B7F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4F4653B199BA17000598B7F /* WortsucheTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4F46541199BA17000598B7F /* WortsucheTests.m */,
+				B4F4653C199BA17000598B7F /* Supporting Files */,
+			);
+			path = WortsucheTests;
+			sourceTree = "<group>";
+		};
+		B4F4653C199BA17000598B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4F4653D199BA17000598B7F /* WortsucheTests-Info.plist */,
+				B4F4653E199BA17000598B7F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4F46513199BA17000598B7F /* Wortsuche */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F46545199BA17000598B7F /* Build configuration list for PBXNativeTarget "Wortsuche" */;
+			buildPhases = (
+				B4F46510199BA17000598B7F /* Sources */,
+				B4F46511199BA17000598B7F /* Frameworks */,
+				B4F46512199BA17000598B7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wortsuche;
+			productName = Wortsuche;
+			productReference = B4F46514199BA17000598B7F /* Wortsuche.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4F46534199BA17000598B7F /* WortsucheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F46548199BA17000598B7F /* Build configuration list for PBXNativeTarget "WortsucheTests" */;
+			buildPhases = (
+				B4F46531199BA17000598B7F /* Sources */,
+				B4F46532199BA17000598B7F /* Frameworks */,
+				B4F46533199BA17000598B7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F4653A199BA17000598B7F /* PBXTargetDependency */,
+			);
+			name = WortsucheTests;
+			productName = WortsucheTests;
+			productReference = B4F46535199BA17000598B7F /* WortsucheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4F4650C199BA17000598B7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Aldekamp;
+				TargetAttributes = {
+					B4F46534199BA17000598B7F = {
+						TestTargetID = B4F46513199BA17000598B7F;
+					};
+				};
+			};
+			buildConfigurationList = B4F4650F199BA17000598B7F /* Build configuration list for PBXProject "Wortsuche" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4F4650B199BA17000598B7F;
+			productRefGroup = B4F46515199BA17000598B7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4F46513199BA17000598B7F /* Wortsuche */,
+				B4F46534199BA17000598B7F /* WortsucheTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4F46512199BA17000598B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F46522199BA17000598B7F /* InfoPlist.strings in Resources */,
+				B4F46530199BA17000598B7F /* Images.xcassets in Resources */,
+				B4F46528199BA17000598B7F /* Credits.rtf in Resources */,
+				B4F4652E199BA17000598B7F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F46533199BA17000598B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F46540199BA17000598B7F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4F46510199BA17000598B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A68F9199BAC1C00009368 /* CAXHTMLParser.m in Sources */,
+				B43A68FE199BAE0F00009368 /* SYXmlParser.m in Sources */,
+				B43A68F6199BA71300009368 /* CAWortSucheController.m in Sources */,
+				B4F4652B199BA17000598B7F /* CAAppDelegate.m in Sources */,
+				B4F46524199BA17000598B7F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F46531199BA17000598B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F46542199BA17000598B7F /* WortsucheTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4F4653A199BA17000598B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4F46513199BA17000598B7F /* Wortsuche */;
+			targetProxy = B4F46539199BA17000598B7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4F46520199BA17000598B7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4F46521199BA17000598B7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B4F46526199BA17000598B7F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4F46527199BA17000598B7F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B4F4652C199BA17000598B7F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4F4652D199BA17000598B7F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B4F4653E199BA17000598B7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4F4653F199BA17000598B7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4F46543199BA17000598B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B4F46544199BA17000598B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B4F46546199BA17000598B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wortsuche/Wortsuche-Prefix.pch";
+				INFOPLIST_FILE = "Wortsuche/Wortsuche-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4F46547199BA17000598B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wortsuche/Wortsuche-Prefix.pch";
+				INFOPLIST_FILE = "Wortsuche/Wortsuche-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B4F46549199BA17000598B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wortsuche.app/Contents/MacOS/Wortsuche";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wortsuche/Wortsuche-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WortsucheTests/WortsucheTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B4F4654A199BA17000598B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wortsuche.app/Contents/MacOS/Wortsuche";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wortsuche/Wortsuche-Prefix.pch";
+				INFOPLIST_FILE = "WortsucheTests/WortsucheTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4F4650F199BA17000598B7F /* Build configuration list for PBXProject "Wortsuche" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F46543199BA17000598B7F /* Debug */,
+				B4F46544199BA17000598B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F46545199BA17000598B7F /* Build configuration list for PBXNativeTarget "Wortsuche" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F46546199BA17000598B7F /* Debug */,
+				B4F46547199BA17000598B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F46548199BA17000598B7F /* Build configuration list for PBXNativeTarget "WortsucheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F46549199BA17000598B7F /* Debug */,
+				B4F4654A199BA17000598B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4F4650C199BA17000598B7F /* Project object */;
+}

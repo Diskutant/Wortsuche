@@ -14,6 +14,7 @@
 @property (assign) IBOutlet NSTextField *wordLength;
 @property (assign) IBOutlet NSTextField *allowedLetters;
 @property (assign) IBOutlet NSTextView *textView;
+@property (readwrite) IBOutlet NSProgressIndicator *indicator;
 
 
 -(IBAction)search:(id)sender;

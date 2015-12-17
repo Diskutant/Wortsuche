@@ -46,12 +46,15 @@ CAAppDelegate *theDelegate;
             [allowedLettersArray addObject: letter];
         }
     }
-    [self loadWords];
+    [self loadWords:delegate];
 }
 
 
--(void)loadWords{
+-(void)loadWords:(CAAppDelegate *)delegate{
     NSLog(@"web request started");
+    [delegate.indicator startAnimation:self];
+
+    
     NSString *post                 = [NSString stringWithFormat:@"str=%@&submit", searchString];
     NSData *postData               = [post dataUsingEncoding:NSUTF8StringEncoding];
     NSString *postLength           = [NSString stringWithFormat:@"%ld", (unsigned long)[postData length]];
@@ -177,7 +180,7 @@ CAAppDelegate *theDelegate;
     
     
     [theDelegate showResults:allowedWords];
-    
+    [[theDelegate indicator] stopAnimation:self];
     
 }
 

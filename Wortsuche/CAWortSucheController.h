@@ -15,7 +15,7 @@
 }
 
 
-
+- (id)initWithDelegate:(NSObject<NSApplicationDelegate> *)delegate;
 - (void)start:(int)wordLength withAllowedLetters:(NSString *)allowedLetters andDelegate:(CAAppDelegate *)delegate;
 - (void)startWithString:(NSString *)searchString withAllowedLetters:(NSString *)allowedLetters andDelegate:(CAAppDelegate *)delegate;
 

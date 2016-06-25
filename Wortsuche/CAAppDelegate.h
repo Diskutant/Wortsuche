@@ -13,12 +13,14 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField *wordLength;
 @property (assign) IBOutlet NSTextField *allowedLetters;
-@property (assign) IBOutlet NSTextView *textView;
+@property (assign) IBOutlet NSTextView *filteredTextView;
+@property (assign) IBOutlet NSTextView *unfilteredTextView;
 @property (readwrite) IBOutlet NSProgressIndicator *indicator;
 
 
 -(IBAction)search:(id)sender;
 
--(void)showResults:(NSArray *)theResult;
+-(void)showResults:(NSArray<NSString *> *)theResult;
+-(void)showUnfilteredResults:(NSArray<NSString *> *)allWords;
 
 @end

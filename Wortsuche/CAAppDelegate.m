@@ -14,32 +14,25 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-
 }
 
 
 -(IBAction)search:(id)sender{
-    NSLog(@"Search");
-    
+    [self.indicator startAnimation:self];
     CAWortSucheController *wortsuche = [CAWortSucheController new];
-   
     
     NSCharacterSet* notDigits = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
     if ([[self.wordLength stringValue] rangeOfCharacterFromSet:notDigits].location == NSNotFound)
     {
-        // wordLength consists only of the digits 0 through 9
+        //wordLength contains only the digits 0 through 9
         [wortsuche start:[self.wordLength intValue] withAllowedLetters:[self.allowedLetters stringValue] andDelegate:self];
     }else{
         [wortsuche startWithString:[self.wordLength stringValue] withAllowedLetters:[self.allowedLetters stringValue] andDelegate:self];
     }
-    
-    
-    
-    
 }
 
 
--(void)showResults:(NSArray *)theResult{
+-(void)showResults:(NSArray<NSString *> *)theResult{
     NSMutableString *mutableString = [[NSMutableString alloc] init];
     int i = 1;
     for (NSString *word in theResult) {
@@ -52,9 +45,23 @@
 
     }
     
-//    [self.textView setStringValue:mutableString];
-    [self.textView setString:mutableString];
+    [self.filteredTextView setString:mutableString];
+    [self.indicator stopAnimation:self];
+}
 
+
+-(void)showUnfilteredResults:(NSArray<NSString *> *)allWords{
+    NSMutableString *mutableString = [[NSMutableString alloc] init];
+
+    for (NSString *word in allWords) {
+        [mutableString appendFormat:@"%@ ", word];
+    }
+    
+    [self.unfilteredTextView setString:mutableString];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
 }
 
 @end

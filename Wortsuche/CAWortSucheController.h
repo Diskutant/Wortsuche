@@ -11,11 +11,19 @@
 #import "CAAppDelegate.h"
 
 @interface CAWortSucheController : NSObject{
-        NSArray *resultArray;
+
+    NSArray<NSString *> *resultArray;
+    NSMutableData *webData;
+    NSString *searchString;
+    NSMutableArray<NSString *> *allowedLettersArray;
+    NSString *fullAllowedLettersString;
+    CAAppDelegate *theDelegate;
+    int wordLength;
+    bool isIntSearch;
+    bool containsAsterisk;
 }
 
 
-- (id)initWithDelegate:(NSObject<NSApplicationDelegate> *)delegate;
 - (void)start:(int)wordLength withAllowedLetters:(NSString *)allowedLetters andDelegate:(CAAppDelegate *)delegate;
 - (void)startWithString:(NSString *)searchString withAllowedLetters:(NSString *)allowedLetters andDelegate:(CAAppDelegate *)delegate;
 
